@@ -5,93 +5,117 @@ PC
 /* ヘッダー */
 
 .site-header-menu-list {
-	display: none;
+  display: none;
 }
 
-.hamburger-menu-btn-wrap{
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-.hamburger-menu-btn-wrap{
+.hamburger-menu-btn-wrap {
+  margin-top: 20px;
+  margin-left: 20px;
 	position: absolute;
 	cursor: pointer;
 }
 
-.hamburger-menu-btn-wrap img{
-	width: 60px;
-}
-.line-second{
-	margin-top: -10px;
-}
-.line-third{
-	margin-top: -10px;
+.hamburger-menu-btn-wrap > div{
+	transition: all 0.5s;
 }
 
-.main-visual{
-	background-color: #fcdb48;
-	background-image: url(../img/penki1.png);
-	-webkit-background-size: 50%;
-	background-size: 120%;
-	background-repeat: no-repeat;
-	background-position: center top -200px;
-	padding-top: 100px;
-	padding-bottom: 200px;
-	text-align: center;
+.hamburger-menu-btn-wrap img {
+  width: 60px;
 }
-.main-visual-img{
-	display: block;
-	height:500px;
-	width: auto;
-	margin: 0 auto;
+.hamburger-menu-btn-wrap.isOpen > .line-first{
+	margin-top: 10px;
+	transform: rotate(405deg);
 }
-.mainvisual-pyokrok-description{
-	font-size: 27px;
-	font-weight: bold;
-	margin-top: 40px;
+.hamburger-menu-btn-wrap.isOpen > .line-second {
+  opacity: 0;
 }
 
-.contents-section{
-	transform: skewY(-7deg);
-	background-color: #8cc0dc;
-	padding-top: 100px;
-	padding-bottom: 80px;
-	padding-left: 100px;
-	padding-right: 100px;
+.hamburger-menu-btn-wrap.isOpen > .line-third {
+    transform: rotate(-405deg);
+margin-left: 1px;
+margin-top: -64px;
 }
 
-.content-wrap{
-		transform: skewY(7deg);
-}
-.section-heading{
-	color: #FFFFFF;
-	font-size: 40px;
-	font-weight: bold;
-	margin-left: 0;
-}
-.products{
-	margin-top: -100px;
-	border-bottom: 80px solid #fcdb48;
-}
-.products-item-list{
-	display: flex;
-	margin-top: 20px;
-}
-.products-item-list li{
-	width: 140px;
-	height: 200px;
-	background-color: #fff;
-}
-.products-item-list li:not(:first-child){
-	margin-left: 40px;
-}
-.contact{
-	border-bottom: 80px solid #fcdb48;
-}
-.about-us{
-	border-bottom: 80px solid #fcdb48;
+.line-second {
+  margin-top: -10px;
 }
 
+.line-third {
+  margin-top: -10px;
+}
+
+.main-visual {
+  background-color: #fcdb48;
+  background-image: url(../img/penki1.png);
+  -webkit-background-size: 50%;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center top -200px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.main-visual-img {
+  display: block;
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.mainvisual-pyokrok-description {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.contents-section {
+  transform: skewY(-7deg);
+  background-color: #8cc0dc;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.content-wrap {
+  transform: skewY(7deg);
+}
+
+.section-heading {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.products {
+  margin-top: -100px;
+  border-bottom: 80px solid #fcdb48;
+}
+
+.products-item-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.products-item-list li {
+  width: 140px;
+  height: 200px;
+  background-color: #fff;
+}
+
+.products-item-list li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.contact {
+  border-bottom: 80px solid #fcdb48;
+}
+
+.about-us {
+  border-bottom: 80px solid #fcdb48;
+}
 
 /* ******************
 SP
