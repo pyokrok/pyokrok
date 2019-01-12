@@ -1,2 +1,0 @@
-# pyokrok
-pyokrok website
