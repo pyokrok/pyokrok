@@ -1,0 +1,271 @@
+
+body{
+    overflow-x: hidden;
+    /* position: relative;
+    top:-300px; */
+    height:100%;
+    width: 100%;
+}
+div{
+    display: block;
+}
+table,tbody,tr{
+
+    width: 100%;
+    height: 100%;
+}
+td{
+    width: 50%;
+    height: 100%;
+}
+.background_left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(252,224,99);
+}
+.background_right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(215,187,255);
+}
+.iphone{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 90%;
+    transform: rotate(4deg);
+    /* margin: 0 auto; */
+
+}
+
+.catchcopy{
+    z-index: 2;
+    height: 40%;
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+}
+
+.prducts_title-area{
+    z-index: 9;
+    width: 100%;
+    height: 120px;
+    background-color: #FF6F65;
+    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
+  position: relative;
+}
+
+.news_title-area{
+    width: 100%;
+    height: 120px;
+    background-color: #FCDB48;
+    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
+  position: relative;
+}
+.about_title-area{
+    width: 100%;
+    height: 120px;
+    background-color: #FDAED5;
+    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
+  position: relative;
+}
+.center-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.introduce_background{
+    background-color:white;
+    border:solid 2px;
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+}
+.contact_title-area{
+    width: 100%;
+    height: 120px;
+    background-color: #FDAEFD;
+    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
+    position: relative;
+}
+
+
+
+.title{
+    height: 55.28px;
+
+
+}
+.title_about{
+    position: relative;
+    top:26px;
+    left:37px;
+
+}
+.title_puroducts{
+    position: relative;
+    top: 5px;
+    left: 45px;
+}
+.title_news{
+    position: relative;
+    top: -1px;
+    left: 12px;
+}
+.title_contact{
+    position: relative;
+    top: -2px;
+    left: 7px;
+}
+.title_icon_candy{
+    height: 60px;
+    position: relative;
+    top: 26px;
+    left: 30px;
+}
+.title_icon_ice1{
+    height: 82px;
+    position: relative;
+    top: 12px;
+    left: 30px;
+}
+.title_icon_ice2{
+    height: 84px;
+    position: relative;
+    top: 12px;
+    left: 8px;
+}
+.title_icon_ice3{
+    height: 96px;
+    position: relative;
+    top: 12px;
+    left: 5px;
+}
+.section {
+    width: 100%;
+    height: 100%;
+  }
+section{
+    overflow: hidden;
+}
+
+.section-top{
+    width: 100%;
+    height: 100%;
+}
+.section-product{
+    background-color: rgb(255,182,177);
+
+}
+.section-news{
+    background-color: rgb(253, 236, 159);
+
+}
+.section-about{
+    background-color: rgb(254,213,233);
+}
+.section-contact{
+    background-color: rgb(254, 214, 254);
+}
+.section-content{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.slide-and-introduce{
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    position: relative;
+    top: 80px;
+
+}
+.product-introduce{
+    display: table-cell;
+
+}
+.product-introduce > h1{
+    display: inline;
+}
+.product-slide{
+    display: table-cell;
+}
+.product-logo{
+    width: 50%;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+.product-introduce-text{
+    width: 50%;
+    position: relative;
+    top: 273px;
+    left: 100px;
+}
+/* ↓はslick.jsのテストcss */
+.container{
+    width: 50%;
+    margin-left: 200px;
+    /* margin-top: 100px; */
+}
+.single-item{
+    width: 100%;
+    height: 100%;
+}
+.slick-slide {
+    text-align: center;
+    color: #419be0;
+    background: white;
+}
+.slide_img{
+    width: 100%;
+    height: 100%;
+}
+.single-item > div , .single-item > img{
+	/* position: absolute; */
+	border-radius: 50%;
+	border:solid 3px black;
+	background-color: skyblue;
+    /* display: none; */
+		/* display: none; */
+}
+.single-item > img.isShow{
+
+
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    width: 100px;
+    right:-100px;
+    z-index: 990;
+    zoom: 4;
+}
+.slick-prev {
+    width: 100px;
+    left: 100px;
+    z-index: 1000;
+    zoom: 4;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+    border-radius: 50%;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    
+    <style>
+        .section {
+            width: 100%;
+        }
+        .section-content {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #232323;
+        &:first-child {
+            margin-top: 0;
+        }
+        }
+
+        h3 {
+            color: #232323;
+        }
+
+        p {
+            color: #232323;
+        }
+
+        .section-red {
+            background-color: #ff6363;
+        }
+
+        .section-blue {
+            background-color: #8fbbff;
+        }
+
+        .section-green {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section section-blue js-section" data-section-name="section1">
+        <div class="section-content">
+                <h2>section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reprehenderit, labore nostrum hic. Natus hic corporis, delectus vero voluptatem maxime voluptate tempora expedita quo iure atque vitae deserunt culpa quibusdam!</p>
+        </div>
+    </section>
+    <section class="section section-red js-section" data-section-name="section2">
+        <div class="section-content">
+                <h2>section 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae, sint dicta quod, nemo possimus! Impedit sed rerum quidem, voluptate possimus quo accusamus vitae necessitatibus incidunt ut fugit nihil voluptatem.</p>
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae, sint dicta quod, nemo possimus! Impedit sed rerum quidem, voluptate possimus quo accusamus vitae necessitatibus incidunt ut fugit nihil voluptatem.</p>
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae, sint dicta quod, nemo possimus! Impedit sed rerum quidem, voluptate possimus quo accusamus vitae necessitatibus incidunt ut fugit nihil voluptatem.</p>
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae, sint dicta quod, nemo possimus! Impedit sed rerum quidem, voluptate possimus quo accusamus vitae necessitatibus incidunt ut fugit nihil voluptatem.</p>
+        </div>
+    </section>
+    <section class="section section-blue js-section" data-section-name="section3">
+        <div class="section-content">
+                <h2>section 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reprehenderit, labore nostrum hic. Natus hic corporis, delectus vero voluptatem maxime voluptate tempora expedita quo iure atque vitae deserunt culpa quibusdam!</p>
+        </div>
+    </section>
+    <script>
+            var option = {
+            section : '.js-section', // 対象を指定
+            easing: "swing", // イージングをしてい(jQueryのanimation)
+            scrollSpeed: 600, // スクロール時の速度
+            scrollbars: true, // スクロールバーを表示するか
+            };
+    
+            $(function() {
+                $.scrollify(option); // scrollifyの実行
+            });
+        </script>
+</body>
+</html>

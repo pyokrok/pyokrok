@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <script src="js/slick.min.js"></script>
+    
+    <style>
+            .container {
+ 
+        }
+        body{
+            background-color: khaki;
+        }
+        .slick-slide {
+        text-align: center;
+        color: #419be0;
+        background: white;
+        }
+        .single-item > div{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: skyblue;
+        }
+                /*左右の矢印の色を変える*/
+        .slick-prev:before,
+        .slick-next:before {
+            color: #FA918A;
+        }
+        /*左右の矢印の位置を変える*/
+        .slick-next {
+            width: 100px;
+            right: 20px;
+            z-index: 99;
+        }
+        .slick-prev {
+            width: 100px;
+
+            left: 15px;
+            z-index: 100;
+        }
+        /*スライド数のドットの色を変える*/
+        .slick-dots li.slick-active button:before,
+        .slick-dots li button:before {
+            color: #fff;
+            border-radius: 50%;
+            border: solid 1px black;
+        }
+        /*スライド画像の横幅可変*/
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+        <div class='container center-content'>
+                <div class='single-item'>
+                  <div>
+                    <img src="/Users/macbook/Downloads/doodle-3505459_1920.png" alt="" height="400px"  >
+                  </div>
+                  <div>
+                    <img src="/Users/macbook/Downloads/doodle-3505459_1920.png" alt="" height="400px" >
+                  </div>
+                  <div>
+                    <img src="/Users/macbook/Downloads/doodle-3505459_1920.png" alt="" height="400px" >
+                  </div>                  
+                </div>
+              </div>
+              <script>
+              $(function(){
+                    $('.single-item').slick({
+                        accessibility: false,
+                        autoplay: false,
+                        autoplaySpeed: 1000,
+                        dots: true,
+                        fade: true,
+                    });
+                    });
+              </script>
+</body>
+</html>

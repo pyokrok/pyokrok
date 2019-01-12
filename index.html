@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.scrollify.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900" rel="stylesheet">
+    <script src="js/jquery.scrollify.js"></script>
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+</head>
+<body>
+
+        <section class="section section-top js-section" data-section-name="top">
+                <div class="section-content">
+
+                    <img src="img/iPhone/example.png"  alt="iphone" class="iphone">
+                    <img src="img/words/catchcopy@3x.png" alt="catchcopy" class="catchcopy">
+                    <table>
+                        <tr>
+                            <td><div class="background_left"></div></td><td><div class="background_right"></div></td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+            <section class="section section-about js-section" data-section-name="about">
+                <div class="section-content">
+                    <div class="about_title-area">
+                            <img src="img/sweets/candy.png" alt="icon" class="title_icon_candy">
+                        <img src="img/words/ABOUT@3x.png" alt="about" class="title title_about">
+                    </div>
+                    <div class="center-content"> <div class="introduce_background"></div></div>
+
+
+                </div>
+            </section>
+
+        <section class="section section-product js-section" data-section-name="products">
+                <div class="section-content">
+                        <div class="prducts_title-area  ">
+                            <img src="img/sweets/ice.png" alt="icon" class="title_icon_ice1">
+                            <img src="img/words/PRODUCTS@3x.png" alt="products" class="title title_puroducts">
+                        </div>
+                        <div class="slide-and-introduce">
+                            <div class="product-slide">
+                                <div class='container'>
+                                    <div class='single-item  center-content'>
+                                        <img src="img/TEST/pyoklog.png" alt="slide1" class="slide_img isShow">
+                                        <img src="img/TEST/sweets.png" alt="slide2" class="slide_img" >
+                                        <img src="img/background/city-2819019_1920.png" alt="slide3"  class="slide_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-introduce">
+                                <img src="img/TEST/logo.png" alt="" class="product-logo">
+                                <img src="img/TEST/introduce.png" alt="" class="product-introduce-text">
+                            </div>
+                        </div>
+
+                </div>
+            </section>
+
+
+            <section class="section section-news js-section" data-section-name="news">
+                    <div class="section-content">
+                        <div class="news_title-area">
+                            <img src="img/sweets/ice2.png" alt="ice2" class="title_icon_ice2">
+                            <img src="img/words/NEWS@3x.png" alt="news" class="title title_news">
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <section class="section section-contact js-section" data-section-name="contact">
+                        <div class="section-content">
+                            <div class="contact_title-area">
+                                <img src="img/sweets/ice3.png" alt="ice2" class="title_icon_ice3">
+                                <img src="img/words/CONTACT@3x.png" alt="contact" class="title title_contact">
+                            </div>
+
+                            <div class="contact-area "></div>
+                        </div>
+                </section>
+
+
+
+
+    <script>
+            var option = {
+            section : '.js-section', // 対象を指定
+            scrollSpeed: 600, // スクロール時の速度
+            scrollbars: false, // スクロールバーを表示するか
+            };
+
+            $(function() {
+                $.scrollify(option); // scrollifyの実行
+            });
+            // $(function(){
+            //     $('.single-item').slick({
+            //         accessibility: false,
+            //         autoplay: false,
+            //         autoplaySpeed: 1000,
+            //         dots: true,
+            //         fade: true,
+            //     });
+            //  });
+
+						//スライドJS
+						var pyokrok = {};
+						pyokrok.slide = {
+							init:function(){
+								this.setPramerters();
+								this.bindEvent();
+							},
+							setPramerters:function(){
+								console.log("test!!!")
+							},
+							bindEvent:function(){
+
+							}
+						}
+						 $(function(){
+							 pyokrok.slide.init();
+						 });
+    </script>
+</body>
+</html>
