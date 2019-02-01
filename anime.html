@@ -16,10 +16,17 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
     font-family: 'Montserrat',"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
     vertical-align: baseline;
 }
+html,body{
+	height: 100%;
+}
 
 /* アニメーション要素 */
+.test{
+	display:flex;
+	height: 100%;
+}
 .elm1{
-  display: inline-block;
+  /* display: inline-block; */
   height: 0px;
   width: 30%;
   background-color: #303030;
@@ -34,7 +41,7 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
 }
 .elm2{
   animation-delay:1000ms;
-  display: inline-block;
+  /* display: inline-block; */
   height: 0px;
   width: 70%;
   background-color: #e4e4e4;
@@ -52,20 +59,34 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
   width: 100%;
   border-top:4px #474747 solid;
   display: block;
-  margin-top: -6px;
   animation-delay:1800ms;
   animation-duration: 4000ms;
   opacity: 0;
   animation-fill-mode: forwards;
+	padding: 40px;
 }
 
 
 /* アニメーション要素内アイテム */
 .elm1 .heading{
   color: #FFFFFF;
-}
+	animation-name:itemAnime;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-delay: 2400ms;
+	animation-delay: 2400ms;
+	  animation-fill-mode: forwards;
+		opacity:0;
+	}
 .elm2 .text{
   color: #181818;
+	animation-name:itemAnime;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-delay: 2400ms;
+	animation-delay: 2400ms;
+	  animation-fill-mode: forwards;
+			opacity:0;
 }
 
 /* アニメーション */
@@ -74,7 +95,7 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
     height: 0px;
   }
   to{
-    height: 700px;
+    height: 100%;
     padding: 30px;
   }
 }
@@ -83,7 +104,7 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
       height: 0px;
   }
   to{
-      height: 700px;
+      height: 100%;
       padding: 30px;
   }
 }
@@ -95,18 +116,29 @@ html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, span, blockquote, p
     opacity: 1;
   }
 }
+@keyframes itemAnime {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 </style>
 </head>
 <body>
-  <!-- <div class=""> -->
+  <div class="test">
     <div class="elm1">
       <h1 class="heading">TEST</h1>
     </div><!--
      --><div class="elm2">
         <p class="text">animationanimationanimationanimationanimationanimationanimationanimationanimationanimationanimationanimationananimationanimationanimationanimationanimationimationanimationanimationanimationanimationanimationanimationanimation</p>
     </div><!--
-     --><div class="elm3">
-
-    </div>
+     -->
+		</div>
+		<div class="elm3">
+			<h1 class="heading">TEST</h1>
+			<p>aaaaaaaaaaaaaa</p>
+	 </div>
 </body>
 </html>
