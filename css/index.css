@@ -121,7 +121,6 @@ td{
 }
 .title_about ::before{
     background-image: url('../img/sweets/candy.png');
-    height: 60px;
 }
 .title_puroducts{
     position: relative;
