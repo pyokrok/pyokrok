@@ -116,11 +116,13 @@ td{
     /* position: relative;
     top:26px;
     left:37px; */
+    background-image: url('../img/sweets/candy.png');
+    padding-left:  80px;
 
 }
-.title_about ::before{
+/* .title_about::before{
     background-image: url('../img/sweets/candy.png');
-}
+} */
 .title_puroducts{
     position: relative;
     top: 5px;
