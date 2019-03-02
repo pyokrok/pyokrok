@@ -55,13 +55,9 @@ td{
 .prducts_title-area{
     z-index: 9; 
     width: 100%;
-    /* height: 120px; */
     background-color: #FF6F65;
-    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
-  position: relative;
-  padding: 30px;
+    position: relative;
+    padding: 30px;
 }
 
 .news_title-area{
@@ -131,10 +127,10 @@ td{
 } */
 .title_products{
     width: 100%;
-    height: 50px;
+    height: 63px;
     margin-left: 80px;
-    background-image:url('../img/words/PRODUCTS@3x.png');
-    background-size: 303px;
+    background-image: url(../img/words/PRODUCTS@3x.png);
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     
@@ -149,7 +145,7 @@ td{
     background-repeat: no-repeat;
     position: relative;
     right: 78px;
-    bottom: 23px;
+    bottom: 18px;
 }
 .title_news{
     background-image: url('../img/sweets/ice2.png');
