@@ -129,14 +129,24 @@ td{
 /* .title_about::before{
     background-image: url('../img/sweets/candy.png');
 } */
-.title_puroducts{
-    padding-left:  56px;
+.title_products{
+    width: 100%;
+    height: 50px;
+    margin-left: 80px;
+    background-image:url('../img/words/PRODUCTS@3x.png');
+    background-size: 303px;
+    background-repeat: no-repeat;
     position: relative;
-}
-.title_puroducts::before{
-    content: 'AIUEO';
-    position: absolute;
     
+}
+.title_products::before{
+    content: '';
+    background-image: url(../img/sweets/ice.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .title_news{
     background-image: url('../img/sweets/ice2.png');
