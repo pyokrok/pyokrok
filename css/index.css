@@ -62,22 +62,15 @@ td{
 
 .news_title-area{
     width: 100%;
-    /* height: 120px; */
     background-color: #FCDB48;
-    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
     position: relative;
     padding: 30px;
 }
 .about_title-area{
     width: 100%;
-    background-color: #FDAED5;
-    /* box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 10px 6px -3px rgba(0,0,0,0.3); */
-  position: relative;
-  padding: 30px;
+    background-color: #FFCE4D;
+    position: relative;
+    padding: 30px;
 }
 .center-content{
     width: 100%;
@@ -112,19 +105,26 @@ td{
 
 }
 .title_about{
-    /* position: relative;
-    top:26px;
-    left:37px; */
-    background-image: url('../img/sweets/candy.png');
-    padding-left:  80px;
-    background-position: 0;
-    background-size: 80px;
+    width: 100%;
+    height: 63px;
+    margin-left: 80px;
+    background-image: url(../img/words/ABOUT@3x.png);
+    background-size: contain;
     background-repeat: no-repeat;
-
+    position: relative;
 }
-/* .title_about::before{
-    background-image: url('../img/sweets/candy.png');
-} */
+.title_about::before{
+    content: '';
+    background-image: url(../img/sweets/candy.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 78px;
+    bottom: 12px;
+}
 .title_products{
     width: 100%;
     height: 63px;
@@ -148,18 +148,46 @@ td{
     bottom: 18px;
 }
 .title_news{
-    background-image: url('../img/sweets/ice2.png');
-    padding-left:  80px;
-    background-position: 0;
-    background-size: 80px;
+    width: 100%;
+    height: 63px;
+    margin-left: 80px;
+    background-image: url(../img/words/NEWS@3x.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
+}
+.title_news::before{
+    content: '';
+    background-image: url(../img/sweets/ice2.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 86px;
+    bottom: 9px;
 }
 .title_contact{
-    background-image: url('../img/sweets/ice3.png');
-    padding-left:  80px;
-    background-position: 0;
-    background-size: 80px;
+    width: 100%;
+    height: 63px;
+    margin-left: 80px;
+    background-image: url(../img/words/CONTACT@3x.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
+}
+.title_contact::before{
+    content: '';
+    background-image: url(../img/sweets/ice3.png);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 92px;
+    bottom: 16px;
 }
 /* .title_icon_candy{
     height: 60px;
@@ -206,7 +234,7 @@ section{
     
 }
 .section-about{
-    background-color: rgb(254,213,233);
+    background-color: #F9E8A8;
 }
 .section-contact{
     background-color: rgb(254, 214, 254);
