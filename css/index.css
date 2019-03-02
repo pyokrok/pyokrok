@@ -147,6 +147,9 @@ td{
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    left: -78px;
+    bottom: -7px;
 }
 .title_news{
     background-image: url('../img/sweets/ice2.png');
