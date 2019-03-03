@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Pyokrok</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/scrollreveal.min.js"></script>
@@ -17,6 +17,7 @@
 </head>
 <body>
 
+    <div class="main">
         <section class="section section-top js-section" data-section-name="top">
                 <div class="section-content">
 
@@ -79,35 +80,35 @@
             </section>
 
 
-            <section class="section section-news js-section" data-section-name="news">
+        <section class="section section-news js-section" data-section-name="news">
+                <div class="section-content">
+                    <h2><div class="news_title-area">
+                            <h3 class="title_news"></h3>
+                    </div></h2>
+                    
+                </div>
+            </section>
+
+
+
+            <section class="section section-contact js-section" data-section-name="contact">
                     <div class="section-content">
-                        <h2><div class="news_title-area">
-                                <h3 class="title_news"></h3>
+                        <h2><div class="contact_title-area">
+                            <h3 class="title_contact"></h3>                                
                         </div></h2>
-                       
-                    </div>
-                </section>
 
-
-
-                <section class="section section-contact js-section" data-section-name="contact">
-                        <div class="section-content">
-                            <h2><div class="contact_title-area">
-                                <h3 class="title_contact"></h3>                                
-                            </div></h2>
-
-                            <div class="sns-container">
-                                <div class="twitter sns"> 
-                                    <div class="twitter-title sns-title">
-                                        TWITTER
-                                    </div>
+                        <div class="sns-container">
+                            <div class="twitter sns"> 
+                                <div class="twitter-title sns-title">
+                                    TWITTER
                                 </div>
-        
-                                <div class="email sns">
-                                    <div class="email-title sns-title">
-                                        MAIL
-                                    </div>
+                            </div>
+    
+                            <div class="email sns">
+                                <div class="email-title sns-title">
+                                    MAIL
                                 </div>
+                            </div>
 
 
 
@@ -118,29 +119,73 @@
                             <div class="contact-area "></div>
                         </div>
                 </section>
-    
 
+                <ul class="pager" id="js-pager"></ul>
+                <!-- ページャー -->
+    </div>
 
   
     <script>
-            var option = {
-            section : '.js-section', // 対象を指定
-            scrollSpeed: 600, // スクロール時の速度
-            scrollbars: false, // スクロールバーを表示するか
-            };
-    
-            $(function() {
-                $.scrollify(option); // scrollifyの実行
+        var option = {
+        section : '.js-section', // 対象を指定
+        scrollSpeed: 600, // スクロール時の速度
+        scrollbars: false, // スクロールバーを表示するか
+        before:function(index,section){
+            pagerCurrent(index); //ページャーに対応する順番にクラス名を付与
+        },
+        afterRender:function(){
+            createPager();//ページャーの作成
+        }
+        };
+
+        $(function() {
+            $.scrollify(option); // scrollifyの実行
+        });
+        $(function(){
+            $('.single-item').slick({
+                accessibility: false,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                dots: true,
+                fade: true,
             });
-            $(function(){
-                $('.single-item').slick({
-                    accessibility: false,
-                    autoplay: false,
-                    autoplaySpeed: 1000,
-                    dots: true,
-                    fade: true,
-                });
-             });
+            });
+
+        var $section = $('.js-section'); // 各スライド
+        var $pager = $('#js-pager'); // ページャー枠
+
+        // ページャーでaタグをクリックされたらスクロールする
+        function pagerLink () {
+            $pager.find('a').on('click', function() {
+                $.scrollify.move($(this).attr("href"));
+            });
+        }
+        // ページャーの作成
+        function createPager() {
+            $section.each(function(i, e){
+                // ページ内リンク先の作成
+                var sectionName = $(e).attr('data-section-name');
+                // 最初のliにはクラスを付与
+                var addClass = '';
+                if (i === 0) {
+                    addClass = 'is-current';
+                }
+                // liのHTML作成
+                var html = '';
+                html += '<li class="' + addClass + '">';
+                html += '<a href="#' + sectionName + '"></a>';
+                html += '</li>';
+                $pager.append(html);
+            });
+            
+            pagerLink();
+        }
+        function pagerCurrent(index = 0) {
+            var $li = $pager.find('li');
+            $li.removeClass('is-current');
+            $li.eq(index).addClass('is-current');
+        }
+
     </script>
 </body>
 </html> 
