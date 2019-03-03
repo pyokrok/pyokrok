@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Pyokrok</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/scrollreveal.min.js"></script>
@@ -17,11 +17,12 @@
 </head>
 <body>
 
+    <div class="main">
         <section class="section section-top js-section" data-section-name="top">
                 <div class="section-content">
 
                     <img src="img/iPhone/example.png"  alt="iphone" class="iphone">
-                    <img src="img/words/catchcopy@3x.png" alt="catchcopy" class="catchcopy">
+                    <h1><img src="img/words/catchcopy@3x.png" alt="catchcopy" class="catchcopy"></h1>
                     <table>
                         <tr>
                             <td><div class="background_left"></div></td><td><div class="background_right"></div></td>
@@ -33,35 +34,41 @@
             </section>
             <section class="section section-about js-section" data-section-name="about">
                 <div class="section-content">
-                    <div class="about_title-area">
-                            <img src="img/sweets/candy.png" alt="icon" class="title_icon_candy">
-                        <img src="img/words/ABOUT@3x.png" alt="about" class="title title_about">
+                    <h2><div class="about_title-area">
+                            <h3 class="title_about"></h3>
+
+                          
+                    </div></h2>
+                    
+                    <div class="introduce-container">
+                        <div></div>
                     </div>
-                    <div class="center-content"> <div class="introduce_background"></div></div>
-                   
                    
                 </div>
             </section>
     
         <section class="section section-product js-section" data-section-name="products">
                 <div class="section-content">
-                        <div class="prducts_title-area  ">
-                            <img src="img/sweets/ice.png" alt="icon" class="title_icon_ice1">
-                            <img src="img/words/PRODUCTS@3x.png" alt="products" class="title title_puroducts">
-                        </div>
-                        <div class="slide-and-introduce">
+                        <h2><div class="prducts_title-area  ">                            
+                            <h3 class="title_products"></h3>                            
+                        </div></h2>
+                        <!-- <div class="slide-and-introduce">
                             <div class="product-slide">
                                 <div class='container'>
                                     <div class='single-item  center-content'>
+
                                         <div>
-                                        <img src="img/TEST/pyoklog.png" alt="slide1" class="slide_img" >
+                                            <img src="img/TEST/pyoklog.png" alt="slide1" class="slide_img" >
                                         </div>
+
                                         <div>
-                                        <img src="img/TEST/sweets.png" alt="slide2" class="slide_img" >
+                                            <img src="img/TEST/sweets.png" alt="slide2" class="slide_img" >
                                         </div>
+
                                         <div>
-                                        <img src="img/TEST/sweets.png" alt="slide3"  class="slide_img">
-                                        </div>                  
+                                            <img src="img/TEST/sweets.png" alt="slide3"  class="slide_img">
+                                        </div>            
+
                                     </div>
                                 </div>
                             </div>
@@ -69,57 +76,118 @@
                                 <img src="img/TEST/logo.png" alt="" class="product-logo">
                                 <img src="img/TEST/introduce.png" alt="" class="product-introduce-text">
                             </div>
-                        </div>
+                        </div> -->
 
                 </div>
             </section>
 
 
-            <section class="section section-news js-section" data-section-name="news">
+        <section class="section section-news js-section" data-section-name="news">
+                <div class="section-content">
+                    <h2><div class="news_title-area">
+                            <h3 class="title_news"></h3>
+                    </div></h2>
+                    
+                </div>
+            </section>
+
+
+
+            <section class="section section-contact js-section" data-section-name="contact">
                     <div class="section-content">
-                        <div class="news_title-area">
-                            <img src="img/sweets/ice2.png" alt="ice2" class="title_icon_ice2">
-                            <img src="img/words/NEWS@3x.png" alt="news" class="title title_news">
-                        </div>
-                       
-                    </div>
-                </section>
+                        <h2><div class="contact_title-area">
+                            <h3 class="title_contact"></h3>                                
+                        </div></h2>
 
-
-
-                <section class="section section-contact js-section" data-section-name="contact">
-                        <div class="section-content">
-                            <div class="contact_title-area">
-                                <img src="img/sweets/ice3.png" alt="ice2" class="title_icon_ice3">
-                                <img src="img/words/CONTACT@3x.png" alt="contact" class="title title_contact">
+                        <div class="sns-container">
+                            <div class="twitter sns"> 
+                                <div class="twitter-title sns-title">
+                                    TWITTER
+                                </div>
                             </div>
+    
+                            <div class="email sns">
+                                <div class="email-title sns-title">
+                                    MAIL
+                                </div>
+                            </div>
+
+
+
+
+                            </div>
+ 
                             
                             <div class="contact-area "></div>
                         </div>
                 </section>
-    
 
+                <ul class="pager" id="js-pager"></ul>
+                <!-- ページャー -->
+    </div>
 
   
     <script>
-            var option = {
-            section : '.js-section', // 対象を指定
-            scrollSpeed: 600, // スクロール時の速度
-            scrollbars: false, // スクロールバーを表示するか
-            };
-    
-            $(function() {
-                $.scrollify(option); // scrollifyの実行
+        var option = {
+        section : '.js-section', // 対象を指定
+        scrollSpeed: 600, // スクロール時の速度
+        scrollbars: false, // スクロールバーを表示するか
+        before:function(index,section){
+            pagerCurrent(index); //ページャーに対応する順番にクラス名を付与
+        },
+        afterRender:function(){
+            createPager();//ページャーの作成
+        }
+        };
+
+        $(function() {
+            $.scrollify(option); // scrollifyの実行
+        });
+        $(function(){
+            $('.single-item').slick({
+                accessibility: false,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                dots: true,
+                fade: true,
             });
-            $(function(){
-                $('.single-item').slick({
-                    accessibility: false,
-                    autoplay: false,
-                    autoplaySpeed: 1000,
-                    dots: true,
-                    fade: true,
-                });
-             });
+            });
+
+        var $section = $('.js-section'); // 各スライド
+        var $pager = $('#js-pager'); // ページャー枠
+
+        // ページャーでaタグをクリックされたらスクロールする
+        function pagerLink () {
+            $pager.find('a').on('click', function() {
+                $.scrollify.move($(this).attr("href"));
+            });
+        }
+        // ページャーの作成
+        function createPager() {
+            $section.each(function(i, e){
+                // ページ内リンク先の作成
+                var sectionName = $(e).attr('data-section-name');
+                // 最初のliにはクラスを付与
+                var addClass = '';
+                if (i === 0) {
+                    addClass = 'is-current';
+                }
+                // liのHTML作成
+                var html = '';
+                html += '<li class="' + addClass + '">';
+                html += '<a href="#' + sectionName + '"></a>';
+                html += '</li>';
+                $pager.append(html);
+            });
+            
+            pagerLink();
+        }
+        function pagerCurrent(index = 0) {
+            var $li = $pager.find('li');
+            $li.removeClass('is-current');
+            $li.eq(index).addClass('is-current');
+        }
+
     </script>
 </body>
 </html> 
