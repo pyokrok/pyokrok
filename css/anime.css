@@ -1,0 +1,35 @@
+/* アニメーション */
+@keyframes el1Anime {
+  from {
+    height: 0px;
+  }
+  to{
+    height: 100%;
+    padding: 30px;
+  }
+}
+@keyframes el2Anime {
+  from {
+      height: 0px;
+  }
+  to{
+      height: 100%;
+      padding: 30px;
+  }
+}
+@keyframes el3Anime {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes itemAnime {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

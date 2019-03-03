@@ -10,7 +10,7 @@ div{
     display: block;
 }
 table,tbody,tr{
-    
+
     width: 100%;
     height: 100%;
 }
@@ -18,17 +18,37 @@ td{
     width: 50%;
     height: 100%;
 }
-.background_left{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: rgb(252,224,99);
+.background_left {
+  position: absolute;
+  width: 50%;
+  height: 0;
+  background-color: #FCE063;
+  animation-name: el1Anime;
+  animation-duration: 1800ms;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: break-word;
 }
-.background_right{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: rgb(215,187,255);
+
+.background_right {
+  position: absolute;
+  width: 50%;
+  height: 0;
+  background-color: rgb(215, 187, 255);
+  animation-delay: 1000ms;
+  /* display: inline-block; */
+  background-color: #D7BBFF;
+  animation-fill-mode: forwards;
+  animation-name: el2Anime;
+  animation-duration: 2500ms;
+  vertical-align: top;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: break-word
 }
 .iphone{
     z-index: 1;
@@ -40,8 +60,16 @@ td{
     margin: auto;
     width: 90%;
     transform: rotate(4deg);
+
+		animation-name:itemAnime;
+		-webkit-animation-duration: 1.5s;
+		animation-duration: 1.5s;
+		-webkit-animation-delay: 2400ms;
+		animation-delay: 2400ms;
+			animation-fill-mode: forwards;
+			opacity:0;
     /* margin: 0 auto; */
-    
+
 }
 
 .catchcopy{
@@ -50,14 +78,23 @@ td{
     position: absolute;
     bottom: 7%;
     left: 3%;
+
+		animation-name:itemAnime;
+		-webkit-animation-duration: 1.5s;
+		animation-duration: 1.5s;
+		-webkit-animation-delay: 2400ms;
+		animation-delay: 2400ms;
+			animation-fill-mode: forwards;
+			opacity:0;
 }
 
 .prducts_title-area{
-    z-index: 9; 
+    z-index: 9;
     /* width: 100%; */
     background-color: #FF6F65;
     position: relative;
     padding: 30px;
+
 }
 
 .news_title-area{
@@ -133,7 +170,7 @@ td{
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    
+
 }
 .title_products::before{
     content: '';
@@ -222,11 +259,11 @@ section{
 }
 .section-product{
     background-color: rgb(255,182,177);
-    	
+
 }
 .section-news{
-    background-color: rgb(253, 236, 159); 
-    
+    background-color: rgb(253, 236, 159);
+
 }
 .section-about{
     background-color: #F9E8A8;
@@ -235,7 +272,7 @@ section{
     background-color: rgb(254, 214, 254);
 }
 .section-content{
-    width: 100%;  
+    width: 100%;
     height: 100%;
     overflow-y: hidden;
 }
@@ -250,7 +287,7 @@ section{
 }
 .product-introduce{
     display: table-cell;
-    
+
 }
 .product-introduce > h1{
     display: inline;
@@ -321,7 +358,7 @@ section{
     position: relative;
     text-align: center;
     margin-top: 80px;
-    
+
 }
 .sns-title{
     text-align: center;
@@ -337,7 +374,7 @@ section{
     padding: 5px;
     font-size: 28px;
     font-family: Arial;
-    font-weight: 550;   
+    font-weight: 550;
 }
 
 .sns-container{
@@ -374,5 +411,5 @@ section{
     background: #232323
     !important;
 
-    
+
 }
