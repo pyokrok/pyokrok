@@ -189,12 +189,7 @@ td{
     right: 92px;
     bottom: 16px;
 }
-/* .title_icon_candy{
-    height: 60px;
-    position: relative;
-    top: 26px;
-    left: 30px; 
-} */
+
 .title_icon_ice1{
     height: 82px;
     position: relative;
@@ -318,4 +313,32 @@ section{
     color: #fff;
     border-radius: 50%;
 }
+.sns{
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border: solid 3px black;
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+.sns-title{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border: solid 3px black;
+    /* left: 0;
+    right: 0; */
+    margin: auto;
+    position: relative;
+    bottom: 21px;
+    padding: 5px;
+    font-size: 28px;
+    font-family: Arial;
+    font-weight: 550;   
+}
 
+.sns-container{
+    display: flex;
+}
