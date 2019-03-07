@@ -5,19 +5,19 @@ body{
     top:-300px; */
     height:100%;
     width: 100%;
+    font-family: Arial;
 }
 div{
     display: block;
 }
-table,tbody,tr{
+
+.background-2color,table,tbody,tr{
 
     width: 100%;
     height: 100%;
+    display: flex;
 }
-td{
-    width: 50%;
-    height: 100%;
-}
+
 .background_left {
   position: absolute;
   width: 50%;
@@ -49,6 +49,7 @@ td{
   box-sizing: border-box;
   overflow: hidden;
   word-break: break-word
+
 }
 .iphone{
     z-index: 1;
@@ -69,6 +70,7 @@ td{
 			animation-fill-mode: forwards;
 			opacity:0;
     /* margin: 0 auto; */
+
 
 }
 
@@ -114,14 +116,33 @@ td{
     height: 100%;
     text-align: center;
 }
-.introduce_background{
-    background-color:white;
-    border:solid 2px;
-    width: 75%;
-    height: 75%;
+.introduce-container{
     margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.introduce-message{
+    width: 800px;
+    height: 500px;
+    /* background-image: url('../img/words/about_message.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    top: 5%;
+    left: 100px;
+    
+
+
+}
+.introduce-visual{
+    width: 700px;
+    height: 700px;
+    /* background-image: url('../img/other/desk.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    
 }
 .contact_title-area{
     /* width: 100%; */
@@ -351,37 +372,91 @@ section{
     border-radius: 50%;
 }
 .sns{
-    width: 500px;
-    height: 350px;
-    background-color: white;
-    border: solid 3px black;
+    width: 300px;
+    height: 300px;
     position: relative;
     text-align: center;
     margin-top: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.twitter{
+    background-image:url('../img/other/twitter.png');
+}
+.email{
+    background-image:url('../img/other/email.png');    
+}
 
-}
-.sns-title{
-    text-align: center;
-    width: 250px;
-    height: 30px;
-    background-color: white;
-    border: solid 3px black;
-    /* left: 0;
-    right: 0; */
-    margin: auto;
-    position: relative;
-    bottom: 21px;
-    padding: 5px;
-    font-size: 28px;
-    font-family: Arial;
-    font-weight: 550;
-}
+
 
 .sns-container{
     display: flex;
     width: 80%;
     justify-content: space-around;
     margin: 0 auto;
+    
+
+}
+
+.news-container{
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.news-post{
+    padding-left: 20px;     
+    width: 900px;
+    height: 100px;
+    background-color: white;
+    border: solid 3px black;
+    position: relative;
+    margin-top:50px;
+}
+.news-post-date{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border: solid 3px black;
+    position: relative;
+    bottom: 26px;
+    left: 7px;
+    padding: 5px;
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: 550;
+}
+
+
+}
+.news-post-content{
+    
+}
+.products-container{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    border: solid 5px black;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.products-container-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #F5DA7A;
+    text-align: center;
+}
+.pyoklog-logo{
+    width: 400px;
+}
+.pyoklog-explanation{
+    font-family: Arial;
+    font-size: 22px;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 30px;
 }
 
 .main {
@@ -395,6 +470,7 @@ section{
     padding: 0;
   }
 .pager >  li {
+    z-index: 5;
     display: block;
     margin: 20px;
 }
@@ -404,6 +480,7 @@ section{
     height: 10px;
     background: #fff;
     border-radius: 50%;
+    border: solid  3px black;
 }
 
 .is-current > a{
@@ -413,3 +490,89 @@ section{
 
 
 }
+
+@media screen and (max-width: 860px) { 
+    .background-2color{
+        flex-direction: column;
+    }
+    .background_left{
+        width: 100%;
+        height: 50%;
+    }
+    .background_right{
+        width: 100%;
+        height: 50%;
+    }
+    .iphone{
+        height: 85%;    
+        width: auto; 
+        transform: rotate(0deg);
+    }
+    .catchcopy{
+        width: 600px;
+        height: auto;
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+    }
+    @media screen and (max-width: 730px) { 
+        .catchcopy{
+            width: 570px;
+        }
+        @media screen and (max-width: 622px) { 
+            .catchcopy{
+                width: 450px;
+                bottom: 20%;                
+            }
+        @media screen and (max-width: 511px) {
+            .catchcopy{
+                width: 404px;
+                left: 8%;
+            }
+            @media screen and (max-width: 446px) {
+                .catchcopy{
+                    width: 360px;
+                    bottom: 25%;
+                    left: 9%;
+                }
+                @media screen and (max-width: 391px) {
+                    .catchcopy{
+                        width: 320px;
+                        bottom: 28%;
+                    }
+                    @media screen and (max-width: 344px) {
+                        .catchcopy{
+                            width: 290px;
+                        }
+                        @media screen and (max-width: 315px) {
+                            .catchcopy{
+                                width: 275px;
+                            }
+                            @media screen and (max-width: 315px) {
+                                .catchcopy{
+                                    width: 254px;
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+                
+            }
+            
+        }
+
+
+
+                                                
+            
+        }
+
+
+
+
+    }
+}
+
