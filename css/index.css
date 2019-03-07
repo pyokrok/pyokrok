@@ -454,4 +454,31 @@ section{
         width: 100%;
         height: 50%;
     }
+    .iphone{
+        transform: rotate(-63deg); 
+        height: 55%;    
+        width: auto;     
+    }
+    .catchcopy{
+        width: 600px;
+        height: auto;
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+    }
+    @media screen and (max-width: 730px) { 
+        .catchcopy{
+            width: 570px;
+        }
+        @media screen and (max-width: 622px) { 
+            .catchcopy{
+                width: 450px;
+            }
+        }
+
+
+
+
+    }
 }
+
