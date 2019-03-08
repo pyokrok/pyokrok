@@ -11,7 +11,7 @@ div{
     display: block;
 }
 
-.background-2color,table,tbody,tr{
+.background-2color{
 
     width: 100%;
     height: 100%;
@@ -19,36 +19,40 @@ div{
 }
 
 .background_left {
-  position: absolute;
-  width: 50%;
-  height: 0;
-  background-color: #FCE063;
-  animation-name: el1Anime;
-  animation-duration: 1800ms;
-  animation-delay: 400ms;
-  animation-fill-mode: forwards;
-  padding: 0px;
-  box-sizing: border-box;
-  overflow: hidden;
-  word-break: break-word;
+    
+
+    width: 50%;
+    height: 100%;
+    background-color: rgb(252,224,99);
+    background-color: #FCE063;
+    animation-name: el1Anime;
+    animation-duration: 1800ms;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-break: break-word;
+  
 }
 
 .background_right {
-  position: absolute;
-  width: 50%;
-  height: 0;
-  background-color: rgb(215, 187, 255);
-  animation-delay: 1000ms;
-  /* display: inline-block; */
-  background-color: #D7BBFF;
-  animation-fill-mode: forwards;
-  animation-name: el2Anime;
-  animation-duration: 2500ms;
-  vertical-align: top;
-  padding: 0px;
-  box-sizing: border-box;
-  overflow: hidden;
-  word-break: break-word
+    
+    width: 50%;
+    height: 100%;
+    background-color: rgb(215,187,255);
+    animation-delay: 1000ms;
+    /* display: inline-block; */
+    background-color: #D7BBFF;
+    animation-fill-mode: forwards;
+    animation-name: el2Anime;
+    animation-duration: 2500ms;
+    vertical-align: top;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-break: break-word
+  
 
 }
 .iphone{
@@ -59,8 +63,9 @@ div{
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 90%;
-    transform: rotate(4deg);
+    width: 33%;
+    /* margin: 0 auto; */
+    transform: rotate(67deg);
 
 		animation-name:itemAnime;
 		-webkit-animation-duration: 1.5s;
