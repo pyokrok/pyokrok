@@ -496,6 +496,7 @@ section{
 
 }
 
+/* キービジュアルの調整 */
 @media screen and (max-width: 860px) { 
     .background-2color{
         flex-direction: column;
@@ -579,5 +580,10 @@ section{
 
 
     }
+}
+
+/* 各タイトルの調整 */
+@media screen and (max-width: 560px) {
+    
 }
 
