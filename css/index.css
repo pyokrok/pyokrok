@@ -496,6 +496,7 @@ section{
 
 }
 
+/* キービジュアルの調整 */
 @media screen and (max-width: 860px) { 
     .background-2color{
         flex-direction: column;
@@ -509,7 +510,7 @@ section{
         height: 50%;
     }
     .iphone{
-        height: 85%;    
+        height: 77%;    
         width: auto; 
         transform: rotate(0deg);
     }
@@ -579,5 +580,142 @@ section{
 
 
     }
+}
+
+/* 各タイトルの調整 */
+@media screen and (max-width: 560px) {
+    /* ABOUT */
+    .title_about{
+        height: 40px;
+        margin-left: 60px;
+    }
+    .title_about::before{
+        width: 55px;
+        height: 55px;
+        position: relative;
+        right: 57px;
+        bottom: 10px;
+    }
+    .about_title-area{
+        padding: 18px;
+    }
+
+    /* PRODUCTS */
+    .title_products{
+        height: 40px;
+        margin-left: 60px;
+    }
+    .title_products::before{
+        width: 55px;
+        height: 55px;
+        position: relative;
+        right: 52px;
+        bottom: 14px;
+    }
+    .prducts_title-area{
+        padding: 18px;
+    }
+
+    /* NEWS */
+    .title_news{
+        height: 40px;
+        margin-left: 60px;
+    }
+    .title_news::before{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 53px;
+        bottom: 4px;
+    }
+    .news_title-area{
+        padding: 18px;
+    }
+
+    /* CONTACT */
+    .title_contact{
+        height: 40px;
+        margin-left: 60px;
+    }
+    .title_contact::before{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        right: 58px;
+        bottom: 12px;
+    }
+    .contact_title-area{
+        padding: 18px;
+    }
+
+    @media screen and (max-width: 360px) {
+        /* ABOUT */
+        .title_about{
+            height: 28px;
+            margin-left: 37px;
+        }
+        .title_about::before{
+            width: 38px;
+            height: 38px;
+            position: relative;
+            right: 36px;
+            bottom: 7px;
+        }
+        .about_title-area{
+            padding: 13px;
+        }
+
+        /* PRODUCTS */
+        .title_products{
+            height: 28px;
+            margin-left: 37px;
+        }
+        .title_products::before{
+            width: 38px;
+            height: 38px;
+            position: relative;
+            right: 36px;
+            bottom: 10px;
+        }
+        .prducts_title-area{
+            padding: 13px;
+        }
+
+        /* NEWS */
+        .title_news{
+            height: 28px;
+            margin-left: 37px;
+        }
+        .title_news::before{
+            width: 33px;
+            height: 33px;
+            position: relative;
+            right: 37px;
+            bottom: 3px;
+        }
+        .news_title-area{
+            padding: 13px;
+        }
+
+        /* CONTACT */
+        .title_contact{
+            height: 28px;
+            margin-left: 37px;
+        }
+        .title_contact::before{
+            width: 42px;
+            height: 42px;
+            position: relative;
+            right: 44px;
+            bottom: 10px;
+        }
+        .contact_title-area{
+            padding: 13px;
+        }
+    }
+
+
+
+
 }
 
