@@ -719,3 +719,22 @@ section{
 
 }
 
+
+/* CONTACTの項目のレスポンシブ */
+@media screen and (max-width: 786px) {
+    .sns-container{
+        flex-direction: column;
+
+    }
+    .sns{
+        height: 200px;
+    }
+}
+
+
+/* procuctsのpyoklogのdiv調整 */
+@media screen and (max-width: 786px) {
+    .products-container{
+        width: 80%;
+    }
+}
