@@ -724,17 +724,43 @@ section{
 @media screen and (max-width: 786px) {
     .sns-container{
         flex-direction: column;
-
+        /* justify-content:space-between; */
+        width: 80%;
+        height: 450px;
+        margin-top: 40px;
     }
     .sns{
         height: 200px;
+        width: 200px;        
+        margin: 0 auto;
     }
-}
+    @media screen and (max-width: 560px) {
+        @media screen and (max-height: 569px) {
+            .sns{
+                height: 150px;
+                width: 150px;        
+            }
+        
+        }
 
+    }
+    @media screen and (min-height: 710px) {
+        .sns-container{
+            height: 600px;
+        }
+    }
+
+
+
+    
+
+}
+　
 
 /* procuctsのpyoklogのdiv調整 */
 @media screen and (max-width: 786px) {
     .products-container{
         width: 80%;
     }
+    
 }
