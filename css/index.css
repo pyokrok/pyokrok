@@ -404,6 +404,7 @@ section{
 }
 
 .news-container{
+    width: 100%;
     margin-top: 80px;
     margin-left: 90px;
 }
@@ -914,7 +915,7 @@ section{
 /* NEWSの調整 */
 @media screen and (max-width:1050px){
     .news-post{
-        width: 90%;
+        width: 75%;
     }
     @media screen and (max-width:733px){
         .news-post{
@@ -927,12 +928,17 @@ section{
         }
         @media screen and (max-width:500px){
             .news-post-date{
-                width:200px;         
-                border: solid 2.5px black;
+                width: 150px;
+                height: 16px;
+                font-size: 18px;
+                position: relative;
+                bottom: 24px;
+                border: solid 2px black;
             }
             .news-post{
-                border: solid 2.5px  black ;
+                border: solid 2px  black ;
             }
+
 
             @media screen and (max-width:355px){
                 .news-post-date{
@@ -941,7 +947,10 @@ section{
                 .news-post-date{
                     font-size: 20px;
                     height: 22px;
+                    position: relative;
+                    left: 2px;
                 }
+
             }
         }
     }
