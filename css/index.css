@@ -541,8 +541,15 @@ section{
 
 }
 
+/* @media screen and (min-width:1100px){
+    @media screen and (min-height:1200px){
+        
+    }
+} */
+
 /* キービジュアルの調整 */
-@media screen and (max-width: 860px) { 
+@media screen and (max-width: 860px),screen and (min-width:1000px) and (min-height:1200px){
+
     .background-2color{
         flex-direction: column;
     }
@@ -590,6 +597,7 @@ section{
                     .catchcopy{
                         width: 320px;
                         bottom: 28%;
+                        margin-left: 10px;
                     }
                     @media screen and (max-width: 344px) {
                         .catchcopy{
@@ -626,6 +634,14 @@ section{
 
 
     }
+    /* ipadpro向けの表示 */
+    @media screen and (min-width: 1000px) and (min-height:1200px){
+        .catchcopy{
+            width: 710px;
+            position: absolute;
+            bottom: 20%;
+        }
+    } 
 }
 
 /* 各タイトルの調整 */
@@ -886,7 +902,7 @@ section{
         }
     }
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:1000px){
     @media screen and (max-height:599px){
         .pyoklog-explanation{
             zoom: 0.8;
