@@ -19,8 +19,6 @@ div{
 }
 
 .background_left {
-    
-
     width: 50%;
     height: 100%;
     background-color: rgb(252,224,99);
@@ -93,6 +91,16 @@ div{
 		animation-delay: 2400ms;
 			animation-fill-mode: forwards;
 			opacity:0;
+}
+.scroll-navi{
+    background-image: url('../img/words/scroll.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 150px;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
 }
 
 .prducts_title-area{
@@ -553,7 +561,12 @@ section{
 
 /* キービジュアルの調整 */
 @media screen and (max-width: 860px),screen and (min-width:1000px) and (min-height:1200px){
-
+    @media screen and (max-width: 860px){
+        .scroll-navi{
+            width: 20px;
+            height: 80px;
+        }
+    }
     .background-2color{
         flex-direction: column;
     }
