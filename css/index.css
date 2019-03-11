@@ -942,7 +942,6 @@ section{
                 border: solid 2px  black ;
             }
 
-
             @media screen and (max-width:355px){
                 .news-post-date{
                     width:150px;         
