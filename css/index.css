@@ -96,8 +96,8 @@ div{
     background-image: url('../img/words/scroll.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 40px;
-    height: 150px;
+    width: 30px;
+    height: 116px;
     position: absolute;
     right: 40px;
     bottom: 20px;
@@ -559,6 +559,8 @@ section{
 }
 
 
+
+
 /* キービジュアルの調整 */
 @media screen and (max-width: 860px),screen and (min-width:1000px) and (min-height:1200px){
     @media screen and (max-width: 860px){
@@ -659,6 +661,15 @@ section{
             bottom: 20%;
         }
     } 
+}
+/* ページャーのスマホ表示 */
+@media screen and (max-width: 860px){
+    .pager{
+        zoom: 0.5;
+        position: fixed;
+        top: 90%;
+        
+    }
 }
 
 /* 各タイトルの調整 */
