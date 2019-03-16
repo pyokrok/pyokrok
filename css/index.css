@@ -101,6 +101,37 @@ div{
     position: absolute;
     right: 40px;
     bottom: 20px;
+
+    animation-name: fluffy;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes fluffy{
+    0%{
+        bottom: 20px;
+    }
+    /* 下に移動 */
+    25%{
+        bottom: -10px;
+    }
+    /* 真ん中に戻る */
+    50%{
+        bottom: 20px;
+    }
+    /* 上に移動 */
+    75%{
+        bottom: 40px;
+    }
+    /* 真ん中に戻る */
+    100%{
+        bottom: 20px;
+    }
+    
 }
 
 .prducts_title-area{
@@ -550,7 +581,8 @@ section{
     
 }
 .about-text{
-    font-family: 'Arial Black';
+    font-family: Arial;
+    font-weight: bold;
     font-size: 35px;
     margin-top: 20px;
     letter-spacing: 4px;
