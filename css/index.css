@@ -582,10 +582,10 @@ section{
 }
 .about-text{
     font-family: Arial;
-    font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    color: #808080;
 }
 
 
