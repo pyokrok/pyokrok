@@ -2,18 +2,22 @@
 @keyframes el1Anime {
   from {
     height: 0px;
+    background-color: #FCE063;
   }
   to{
     height: 100%;
     padding: 30px;
+    background-color: #FCE063;
   }
 }
 @keyframes el2Anime {
   from {
       height: 0px;
+      background-color: #D7BBFF;
   }
   to{
       height: 100%;
+      background-color: #D7BBFF;
       padding: 30px;
   }
 }
