@@ -1,7 +1,7 @@
 /* アニメーション */
 @keyframes el1Anime {
   from {
-    height: 1px;
+    height: 0px;
   }
   to{
     height: 100%;

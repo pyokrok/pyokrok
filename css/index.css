@@ -1,17 +1,17 @@
-
-body{
+body {
     overflow-x: hidden;
     /* position: relative;
     top:-300px; */
-    height:100%;
+    height: 100%;
     width: 100%;
     font-family: Arial;
 }
-div{
+
+div {
     display: block;
 }
 
-.background-2color{
+.background-2color {
 
     width: 100%;
     height: 100%;
@@ -21,8 +21,7 @@ div{
 .background_left {
     width: 50%;
     height: 100%;
-    background-color: rgb(252,224,99);
-    background-color: #FCE063;
+    background-color: #FFF;
     animation-name: el1Anime;
     animation-duration: 1800ms;
     animation-delay: 400ms;
@@ -31,17 +30,14 @@ div{
     box-sizing: border-box;
     overflow: hidden;
     word-break: break-word;
-  
+
 }
 
 .background_right {
-    
+
     width: 50%;
-    height: 100%;
-    background-color: rgb(215,187,255);
     animation-delay: 1000ms;
-    /* display: inline-block; */
-    background-color: #D7BBFF;
+    background-color: #FFF;
     animation-fill-mode: forwards;
     animation-name: el2Anime;
     animation-duration: 2500ms;
@@ -50,10 +46,9 @@ div{
     box-sizing: border-box;
     overflow: hidden;
     word-break: break-word
-  
-
 }
-.iphone{
+
+.iphone {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -65,34 +60,35 @@ div{
     /* margin: 0 auto; */
     transform: rotate(67deg);
 
-		animation-name:itemAnime;
-		-webkit-animation-duration: 1.5s;
-		animation-duration: 1.5s;
-		-webkit-animation-delay: 2400ms;
-		animation-delay: 2400ms;
-			animation-fill-mode: forwards;
-			opacity:0;
+    animation-name: itemAnime;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 2400ms;
+    animation-delay: 2400ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
     /* margin: 0 auto; */
 
 
 }
 
-.catchcopy{
+.catchcopy {
     z-index: 2;
     height: 40%;
     position: absolute;
     bottom: 7%;
     left: 3%;
 
-		animation-name:itemAnime;
-		-webkit-animation-duration: 1.5s;
-		animation-duration: 1.5s;
-		-webkit-animation-delay: 2400ms;
-		animation-delay: 2400ms;
-			animation-fill-mode: forwards;
-			opacity:0;
+    animation-name: itemAnime;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 2400ms;
+    animation-delay: 2400ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.scroll-navi{
+
+.scroll-navi {
     background-image: url('../img/words/scroll.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,30 +107,34 @@ div{
 
 }
 
-@keyframes fluffy{
-    0%{
+@keyframes fluffy {
+    0% {
         bottom: 20px;
     }
+
     /* 下に移動 */
-    25%{
+    25% {
         bottom: -10px;
     }
+
     /* 真ん中に戻る */
-    50%{
+    50% {
         bottom: 20px;
     }
+
     /* 上に移動 */
-    75%{
+    75% {
         bottom: 40px;
     }
+
     /* 真ん中に戻る */
-    100%{
+    100% {
         bottom: 20px;
     }
-    
+
 }
 
-.prducts_title-area{
+.prducts_title-area {
     z-index: 9;
     /* width: 100%; */
     background-color: #FF6F65;
@@ -143,26 +143,27 @@ div{
 
 }
 
-.news_title-area{
+.news_title-area {
     /* width: 100%; */
     background-color: #FCDB48;
     position: relative;
     padding: 30px;
 }
-.about_title-area{
+
+.about_title-area {
     /* width: 100%; */
     background-color: #FFCE4D;
     position: relative;
     padding: 30px;
 }
 
-.center-content{
+.center-content {
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-.contact_title-area{
+.contact_title-area {
     /* width: 100%; */
     /* height: 120px; */
     background-color: #FDAEFD;
@@ -175,12 +176,13 @@ div{
 
 
 
-.title{
+.title {
     height: 55.28px;
 
 
 }
-.title_about{
+
+.title_about {
     /* width: 100%; */
     height: 63px;
     margin-left: 80px;
@@ -189,7 +191,8 @@ div{
     background-repeat: no-repeat;
     position: relative;
 }
-.title_about::before{
+
+.title_about::before {
     content: '';
     background-image: url(../img/sweets/candy.png);
     display: inline-block;
@@ -201,7 +204,8 @@ div{
     right: 78px;
     bottom: 12px;
 }
-.title_products{
+
+.title_products {
     /* width: 100%; */
     height: 63px;
     margin-left: 80px;
@@ -211,7 +215,8 @@ div{
     position: relative;
 
 }
-.title_products::before{
+
+.title_products::before {
     content: '';
     background-image: url(../img/sweets/ice.png);
     display: inline-block;
@@ -223,7 +228,8 @@ div{
     right: 78px;
     bottom: 18px;
 }
-.title_news{
+
+.title_news {
     /* width: 100%; */
     height: 63px;
     margin-left: 80px;
@@ -232,7 +238,8 @@ div{
     background-repeat: no-repeat;
     position: relative;
 }
-.title_news::before{
+
+.title_news::before {
     content: '';
     background-image: url(../img/sweets/ice2.png);
     display: inline-block;
@@ -244,7 +251,8 @@ div{
     right: 86px;
     bottom: 9px;
 }
-.title_contact{
+
+.title_contact {
     /* width: 100%; */
     height: 63px;
     margin-left: 80px;
@@ -253,7 +261,8 @@ div{
     background-repeat: no-repeat;
     position: relative;
 }
-.title_contact::before{
+
+.title_contact::before {
     content: '';
     background-image: url(../img/sweets/ice3.png);
     display: inline-block;
@@ -266,56 +275,66 @@ div{
     bottom: 16px;
 }
 
-.title_icon_ice1{
+.title_icon_ice1 {
     height: 82px;
     position: relative;
     top: 12px;
     left: 30px;
 }
-.title_icon_ice2{
+
+.title_icon_ice2 {
     height: 84px;
     position: relative;
     top: 12px;
     left: 8px;
 }
-.title_icon_ice3{
+
+.title_icon_ice3 {
     height: 96px;
     position: relative;
     top: 12px;
     left: 5px;
 }
+
 .section {
     width: 100%;
     height: 100%;
-  }
-section{
+}
+
+section {
     overflow: hidden;
 }
 
-.section-top{
+.section-top {
     width: 100%;
     height: 100%;
 }
-.section-product{
-    background-color: rgb(255,182,177);
+
+.section-product {
+    background-color: rgb(255, 182, 177);
 
 }
-.section-news{
+
+.section-news {
     background-color: rgb(253, 236, 159);
 
 }
-.section-about{
+
+.section-about {
     background-color: #F9E8A8;
 }
-.section-contact{
+
+.section-contact {
     background-color: rgb(254, 214, 254);
 }
-.section-content{
+
+.section-content {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
 }
-.slide-and-introduce{
+
+.slide-and-introduce {
     width: 100%;
     height: 100%;
     display: table;
@@ -324,72 +343,87 @@ section{
     top: 80px;
 
 }
-.product-introduce{
+
+.product-introduce {
     display: table-cell;
 
 }
-.product-introduce > h1{
+
+.product-introduce>h1 {
     display: inline;
 }
-.product-slide{
+
+.product-slide {
     display: table-cell;
 }
-.product-logo{
+
+.product-logo {
     width: 50%;
     position: relative;
     top: 200px;
     left: 100px;
 }
-.product-introduce-text{
+
+.product-introduce-text {
     width: 50%;
     position: relative;
     top: 273px;
     left: 100px;
 }
+
 /* ↓はslick.jsのテストcss */
-.container{
+.container {
     width: 50%;
     margin-left: 200px;
     /* margin-top: 100px; */
 }
-.single-item{
+
+.single-item {
     width: 100%;
     height: 100%;
 }
+
 .slick-slide {
     text-align: center;
     color: #419be0;
     background: white;
 }
-.slide_img{
+
+.slide_img {
     width: 100%;
     height: 100%;
 }
-.single-item > div , .single-item > div > img{
+
+.single-item>div,
+.single-item>div>img {
     border-radius: 50%;
-    border:solid 3px black;
+    border: solid 3px black;
     background-color: skyblue;
 }
+
 /*左右の矢印の位置を変える*/
 .slick-next {
     width: 100px;
-    right:-100px;
+    right: -100px;
     z-index: 990;
     zoom: 4;
 }
+
 .slick-prev {
     width: 100px;
     left: 100px;
     z-index: 1000;
     zoom: 4;
 }
+
 /*スライド数のドットの色を変える*/
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
     color: #fff;
     border-radius: 50%;
 }
-.sns{
+
+.sns {
     width: 300px;
     height: 300px;
     position: relative;
@@ -398,40 +432,44 @@ section{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.twitter{
-    background-image:url('../img/other/twitter.png');
-}
-.email{
-    background-image:url('../img/other/email.png');    
+
+.twitter {
+    background-image: url('../img/other/twitter.png');
 }
 
+.email {
+    background-image: url('../img/other/email.png');
+}
 
 
-.sns-container{
+
+.sns-container {
     display: flex;
     width: 80%;
     justify-content: space-around;
     margin: 0 auto;
-    
+
 
 }
 
-.news-container{
+.news-container {
     width: 100%;
     margin-top: 80px;
     margin-left: 90px;
 }
-.news-post{
-    padding: 10px;    
-    padding-bottom: 20px; 
+
+.news-post {
+    padding: 10px;
+    padding-bottom: 20px;
     width: 900px;
     /* height: 100px; */
     background-color: white;
     border: solid 3px black;
     position: relative;
-    margin-top:50px;
+    margin-top: 50px;
 }
-.news-post-date{
+
+.news-post-date {
     text-align: center;
     width: 250px;
     height: 30px;
@@ -447,23 +485,21 @@ section{
 }
 
 
-}
-.news-post-content{
-    
-}
 
-.products-container{
+.products-container {
     display: flex;
     flex-direction: column;
-    
+
 }
-.pyoklog-inner-background{
+
+.pyoklog-inner-background {
     width: 90%;
     height: 90%;
     margin: 0 auto;
     background-color: #F1DB88;
 }
-.pyoklog-outer{
+
+.pyoklog-outer {
     padding: 10px;
     text-align: center;
     width: 700px;
@@ -472,38 +508,43 @@ section{
     margin: 0 auto;
     margin-top: 40px;
 }
-.pyoklog-inner{
+
+.pyoklog-inner {
     background-color: #F5DA7A;
     text-align: center;
-    
+
 }
-.pyoklog-logo{
+
+.pyoklog-logo {
     width: 400px;
 }
-.pyoklog-explanation{
+
+.pyoklog-explanation {
     margin: 0 auto;
     width: 710px;
     margin-top: 30px;
 }
-.genre{
+
+.genre {
     font-family: Arial;
     font-size: 22px;
     color: #808080;
-    
+
 }
 
-.pyoklog-passage{
+.pyoklog-passage {
     font-family: Arial;
     font-size: 18px;
     color: #808080;
     letter-spacing: 1px;
     line-height: 30px;
     margin-top: 15px;
-    
 
-   
+
+
 }
-.pyoklog-button{
+
+.pyoklog-button {
     text-align: center;
     color: white;
     width: 150px;
@@ -517,52 +558,55 @@ section{
     margin: 0 auto;
     position: relative;
     top: 40px;
-    
+
 }
-.underline-none{
+
+.underline-none {
     text-decoration: none;
 }
 
-.main {
-    /* position: relative; */
-  }
-  .pager {
+
+.pager {
     position: fixed;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     padding: 0;
-  }
-.pager >  li {
+}
+
+.pager>li {
     z-index: 5;
     display: block;
     margin: 20px;
 }
-.pager > li > a {
+
+.pager>li>a {
     display: block;
     width: 10px;
     height: 10px;
     background: #fff;
     border-radius: 50%;
-    border: solid  3px black;
+    border: solid 3px black;
 }
 
-.is-current > a{
-    background: #232323
-    !important;
+.is-current>a {
+    background: #232323 !important;
 }
-.contact-cotainer{
+
+.contact-cotainer {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.copyright-container{
+
+.copyright-container {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 20px;
 }
-.about-container{
+
+.about-container {
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -571,16 +615,18 @@ section{
     text-align: center;
 
 }
-.about-img{
+
+.about-img {
     width: 350px;
     height: 350px;
     background-image: url('../img/other/present_box.png');
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
-    
+
 }
-.about-text{
+
+.about-text {
     font-family: Arial;
     font-size: 25px;
     margin-top: 20px;
@@ -592,75 +638,91 @@ section{
 
 
 /* キービジュアルの調整 */
-@media screen and (max-width: 860px),screen and (min-width:1000px) and (min-height:1200px){
-    @media screen and (max-width: 860px){
-        .scroll-navi{
+@media screen and (max-width: 860px),
+screen and (min-width:1000px) and (min-height:1200px) {
+    @media screen and (max-width: 860px) {
+        .scroll-navi {
             width: 20px;
             height: 80px;
         }
     }
-    .background-2color{
+
+    .background-2color {
         flex-direction: column;
     }
-    .background_left{
+
+    .background_left {
         width: 100%;
         height: 50%;
     }
-    .background_right{
+
+    .background_right {
         width: 100%;
         height: 50%;
     }
-    .iphone{
-        height: 77%;    
-        width: auto; 
+
+    .iphone {
+        height: 77%;
+        width: auto;
         transform: rotate(0deg);
     }
-    .catchcopy{
+
+    .catchcopy {
         width: 600px;
         height: auto;
         position: absolute;
         bottom: 10%;
         left: 7%;
     }
-    @media screen and (max-width: 730px) { 
-        .catchcopy{
+
+    @media screen and (max-width: 730px) {
+        .catchcopy {
             width: 570px;
         }
-        @media screen and (max-width: 622px) { 
-            .catchcopy{
+
+        @media screen and (max-width: 622px) {
+            .catchcopy {
                 width: 450px;
-                bottom: 20%;                
+                bottom: 20%;
             }
-        @media screen and (max-width: 511px) {
-            .catchcopy{
-                width: 404px;
-                left: 8%;
-            }
-            @media screen and (max-width: 446px) {
-                .catchcopy{
-                    width: 360px;
-                    bottom: 25%;
-                    left: 9%;
+
+            @media screen and (max-width: 511px) {
+                .catchcopy {
+                    width: 404px;
+                    left: 8%;
                 }
-                @media screen and (max-width: 391px) {
-                    .catchcopy{
-                        width: 320px;
-                        bottom: 28%;
-                        margin-left: 10px;
+
+                @media screen and (max-width: 446px) {
+                    .catchcopy {
+                        width: 360px;
+                        bottom: 25%;
+                        left: 9%;
                     }
-                    @media screen and (max-width: 344px) {
-                        .catchcopy{
-                            width: 270px;
+
+                    @media screen and (max-width: 391px) {
+                        .catchcopy {
+                            width: 320px;
+                            bottom: 28%;
                             margin-left: 10px;
                         }
-                        @media screen and (max-width: 315px) {
-                            .catchcopy{
-                                width: 275px;
+
+                        @media screen and (max-width: 344px) {
+                            .catchcopy {
+                                width: 270px;
+                                margin-left: 10px;
                             }
+
                             @media screen and (max-width: 315px) {
-                                .catchcopy{
-                                    width: 254px;
+                                .catchcopy {
+                                    width: 275px;
                                 }
+
+                                @media screen and (max-width: 315px) {
+                                    .catchcopy {
+                                        width: 254px;
+                                    }
+                                }
+
                             }
 
                         }
@@ -668,168 +730,186 @@ section{
                     }
 
                 }
-                
+
             }
-            
-        }
 
 
 
-                                                
-            
+
+
         }
 
 
 
 
     }
+
     /* ipadpro向けの表示 */
-    @media screen and (min-width: 1000px) and (min-height:1200px){
-        .catchcopy{
+    @media screen and (min-width: 1000px) and (min-height:1200px) {
+        .catchcopy {
             width: 710px;
             position: absolute;
             bottom: 20%;
         }
-    } 
+    }
 }
+
 /* ページャーのスマホ表示 */
-@media screen and (max-width: 860px){
-    .pager{
+@media screen and (max-width: 860px) {
+    .pager {
         zoom: 0.5;
         position: fixed;
         top: 90%;
-        
+
     }
 }
 
 /* 各タイトルの調整 */
 @media screen and (max-width: 560px) {
+
     /* ABOUT */
-    .title_about{
+    .title_about {
         height: 40px;
         margin-left: 60px;
     }
-    .title_about::before{
+
+    .title_about::before {
         width: 55px;
         height: 55px;
         position: relative;
         right: 57px;
         bottom: 10px;
     }
-    .about_title-area{
+
+    .about_title-area {
         padding: 18px;
     }
 
     /* PRODUCTS */
-    .title_products{
+    .title_products {
         height: 40px;
         margin-left: 60px;
     }
-    .title_products::before{
+
+    .title_products::before {
         width: 55px;
         height: 55px;
         position: relative;
         right: 52px;
         bottom: 14px;
     }
-    .prducts_title-area{
+
+    .prducts_title-area {
         padding: 18px;
     }
 
     /* NEWS */
-    .title_news{
+    .title_news {
         height: 40px;
         margin-left: 60px;
     }
-    .title_news::before{
+
+    .title_news::before {
         width: 50px;
         height: 50px;
         position: relative;
         right: 53px;
         bottom: 4px;
     }
-    .news_title-area{
+
+    .news_title-area {
         padding: 18px;
     }
 
     /* CONTACT */
-    .title_contact{
+    .title_contact {
         height: 40px;
         margin-left: 60px;
     }
-    .title_contact::before{
+
+    .title_contact::before {
         width: 60px;
         height: 60px;
         position: relative;
         right: 58px;
         bottom: 12px;
     }
-    .contact_title-area{
+
+    .contact_title-area {
         padding: 18px;
     }
 
     @media screen and (max-width: 360px) {
+
         /* ABOUT */
-        .title_about{
+        .title_about {
             height: 28px;
             margin-left: 37px;
         }
-        .title_about::before{
+
+        .title_about::before {
             width: 38px;
             height: 38px;
             position: relative;
             right: 36px;
             bottom: 7px;
         }
-        .about_title-area{
+
+        .about_title-area {
             padding: 13px;
         }
 
         /* PRODUCTS */
-        .title_products{
+        .title_products {
             height: 28px;
             margin-left: 37px;
         }
-        .title_products::before{
+
+        .title_products::before {
             width: 38px;
             height: 38px;
             position: relative;
             right: 36px;
             bottom: 10px;
         }
-        .prducts_title-area{
+
+        .prducts_title-area {
             padding: 13px;
         }
 
         /* NEWS */
-        .title_news{
+        .title_news {
             height: 28px;
             margin-left: 37px;
         }
-        .title_news::before{
+
+        .title_news::before {
             width: 33px;
             height: 33px;
             position: relative;
             right: 37px;
             bottom: 3px;
         }
-        .news_title-area{
+
+        .news_title-area {
             padding: 13px;
         }
 
         /* CONTACT */
-        .title_contact{
+        .title_contact {
             height: 28px;
             margin-left: 37px;
         }
-        .title_contact::before{
+
+        .title_contact::before {
             width: 42px;
             height: 42px;
             position: relative;
             right: 44px;
             bottom: 10px;
         }
-        .contact_title-area{
+
+        .contact_title-area {
             padding: 13px;
         }
     }
@@ -877,17 +957,19 @@ section{
     }
 
 } */
-@media screen and (max-width:686px){
-    .about-container{
+@media screen and (max-width:686px) {
+    .about-container {
         width: 90%;
     }
-    @media screen and (max-width:410px){
-        .about-img{
+
+    @media screen and (max-width:410px) {
+        .about-img {
             width: 300px;
             height: 300px;
         }
-        @media screen and (max-width:319px){
-            .about-img{
+
+        @media screen and (max-width:319px) {
+            .about-img {
                 width: 260px;
                 height: 260px;
             }
@@ -897,37 +979,40 @@ section{
 
 /* CONTACTの項目のレスポンシブ */
 @media screen and (max-width: 786px) {
-    .sns-container{
+    .sns-container {
         flex-direction: column;
         /* justify-content:space-between; */
         width: 80%;
         height: 450px;
         margin-top: 40px;
     }
-    .sns{
+
+    .sns {
         height: 200px;
-        width: 200px;        
+        width: 200px;
         margin: 0 auto;
     }
+
     @media screen and (max-width: 560px) {
         @media screen and (max-height: 569px) {
-            .sns{
+            .sns {
                 height: 150px;
-                width: 150px;        
+                width: 150px;
             }
-        
+
         }
 
     }
+
     @media screen and (min-height: 710px) {
-        .sns-container{
+        .sns-container {
             height: 600px;
         }
     }
 
 
 
-    
+
 
 }
 
@@ -935,89 +1020,106 @@ section{
 /* procuctsのpyoklog */
 @media screen and (min-width: 1000px) {
     @media screen and (max-height: 635px) {
-        .products-container{
+        .products-container {
             width: 90%;
             margin: 0 auto;
             flex-direction: row;
             justify-content: space-around;
         }
-        .pyoklog-outer{
+
+        .pyoklog-outer {
             width: 450px;
         }
-        .pyoklog-logo{
+
+        .pyoklog-logo {
             position: relative;
             right: 10px;
             bottom: 10px;
         }
-        .pyoklog-explanation{
+
+        .pyoklog-explanation {
             margin-top: 70px;
-                margin-left: 40px;
+            margin-left: 40px;
             width: 600px;
         }
     }
 }
-@media screen and (max-width: 819px){
-    .pyoklog-outer{
+
+@media screen and (max-width: 819px) {
+    .pyoklog-outer {
         width: 500px;
         margin: 0 auto;
         margin-top: 40px;
     }
-    .pyoklog-explanation{
+
+    .pyoklog-explanation {
         width: 400px;
     }
-    @media screen and (max-width: 617px){
-        .pyoklog-outer{
-            width: 400px;            
+
+    @media screen and (max-width: 617px) {
+        .pyoklog-outer {
+            width: 400px;
         }
-        .pyoklog-logo{
+
+        .pyoklog-logo {
             position: relative;
             right: 20px;
             bottom: 10px;
         }
-        @media screen and (max-width: 511px){
-            .pyoklog-outer{
-                width: 300px;            
+
+        @media screen and (max-width: 511px) {
+            .pyoklog-outer {
+                width: 300px;
             }
-            .pyoklog-logo{
+
+            .pyoklog-logo {
                 position: relative;
-                right: 57px;         
+                right: 57px;
             }
-            .pyoklog-explanation{
+
+            .pyoklog-explanation {
                 width: 350px;
             }
-            @media screen and (max-width: 423px){
-                .pyoklog-outer{
-                    width: 250px;            
-                }
-                .pyoklog-logo{
-                    position: relative;
-                    right: 39px;
-                    width: 300px;       
-                }
-                .pyoklog-explanation{
+
+            @media screen and (max-width: 423px) {
+                .pyoklog-outer {
                     width: 250px;
                 }
-                @media screen and (max-width: 356px){
-                    .pyoklog-outer{
-                        width: 200px;            
-                    }
-                    .pyoklog-logo{
-                        position: relative;
-                        right: 34px;
-                        width: 250px;     
-                    }
-                    .pyoklog-explanation{
+
+                .pyoklog-logo {
+                    position: relative;
+                    right: 39px;
+                    width: 300px;
+                }
+
+                .pyoklog-explanation {
+                    width: 250px;
+                }
+
+                @media screen and (max-width: 356px) {
+                    .pyoklog-outer {
                         width: 200px;
                     }
-                    
+
+                    .pyoklog-logo {
+                        position: relative;
+                        right: 34px;
+                        width: 250px;
+                    }
+
+                    .pyoklog-explanation {
+                        width: 200px;
+                    }
+
                 }
             }
         }
     }
 }
-@media screen and (max-width:1000px){
-    @media screen and (max-height:599px){
-        .pyoklog-explanation{
+
+@media screen and (max-width:1000px) {
+    @media screen and (max-height: 599px) {
+        .pyoklog-explanation {
             zoom: 0.8;
         }
     }
@@ -1025,21 +1127,23 @@ section{
 
 
 /* NEWSの調整 */
-@media screen and (max-width:1050px){
-    .news-post{
+@media screen and (max-width:1050px) {
+    .news-post {
         width: 75%;
     }
-    @media screen and (max-width:733px){
-        .news-post{
+
+    @media screen and (max-width:733px) {
+        .news-post {
             position: relative;
             right: 43px
-            
         }
-        .news-post-content{
+
+        .news-post-content {
             line-height: 25px;
         }
-        @media screen and (max-width:500px){
-            .news-post-date{
+
+        @media screen and (max-width:500px) {
+            .news-post-date {
                 width: 150px;
                 height: 16px;
                 font-size: 18px;
@@ -1047,15 +1151,17 @@ section{
                 bottom: 24px;
                 border: solid 2px black;
             }
-            .news-post{
-                border: solid 2px  black ;
+
+            .news-post {
+                border: solid 2px black;
             }
 
-            @media screen and (max-width:355px){
-                .news-post-date{
-                    width:150px;         
+            @media screen and (max-width:355px) {
+                .news-post-date {
+                    width: 150px;
                 }
-                .news-post-date{
+
+                .news-post-date {
                     font-size: 20px;
                     height: 22px;
                     position: relative;
@@ -1066,4 +1172,3 @@ section{
         }
     }
 }
-
